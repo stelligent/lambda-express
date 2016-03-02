@@ -1,0 +1,13 @@
+{
+  "name": "lambda-express",
+  "version": "0.1.0",
+  "description": "Lambda to express app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cplee/lambda-express.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+  }
+}
