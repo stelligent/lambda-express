@@ -1,4 +1,5 @@
 # Overview
+[![NPM version][npm-version-image]][npm-url]
 [AWS Lambda](https://aws.amazon.com/lambda/) function to integrate with [Express](http://expressjs.com/) from [AWS API Gateway](https://aws.amazon.com/api-gateway/)
 
 # Express Integration
@@ -70,4 +71,5 @@ $util.base64Decode( $input.path('$.payload') )
 
 And a header mapping for `Content-Type` of `integration.response.body.contentType`
 
-
+[npm-url]: https://npmjs.org/package/lambda-express
+[npm-version-image]: http://img.shields.io/npm/v/damp.svg?style=flat
