@@ -94,10 +94,11 @@ function mapEvent( event){
     return request;
 }
 
-exports.appHandler = function( app, initCallback ) {
+exports.appHandler = function(app) {
     return function(event, context) {
-        if(initCallback) {
-            initCallback(event, context, app);
+        // if we were passed a function, call it to get the app
+        if(Object.prototype.toString.call(app) == '[object Function]') {
+            app = app(event,context);
         }
 
         var req = mapEvent(event);

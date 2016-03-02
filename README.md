@@ -14,6 +14,14 @@ var app           = express();
 
 // create a handler function that maps lambda inputs to express
 exports.handler = lambdaExpress.appHandler(app);
+
+// or, if you want to do some preprocessing before delegating, pass a function in:
+exports.handler = lambdaExpress.appHandler(function(event,context) {
+    // ... do some cool stuff here ...
+
+    return app;
+});
+
 ```
 
 # API Gateway Integration
