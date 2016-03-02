@@ -2,12 +2,18 @@
   "name": "lambda-express",
   "version": "0.1.1",
   "description": "Lambda to express app",
+  "author": "Casey Lee",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/cplee/lambda-express.git"
   },
+  "bugs": {
+    "url": "https://github.com/cplee/lambda-express/issues"
+  },
+  "homepage": "https://github.com/cplee/lambda-express#readme",
   "main": "index.js",
   "dependencies": {
   }
 }
+
