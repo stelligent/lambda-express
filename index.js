@@ -99,10 +99,8 @@ exports.appHandler = function(appHandle) {
         var app;
         // if we were passed a function, call it to get the app
         if(Object.prototype.toString.call(appHandle) == '[object Function]') {
-            console.log("got function for appHandle");
             app = appHandle(event,context);
         } else {
-            console.log("got app for appHandle");
             app = appHandle;
         }
 
