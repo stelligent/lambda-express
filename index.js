@@ -94,11 +94,16 @@ function mapEvent( event){
     return request;
 }
 
-exports.appHandler = function(app) {
+exports.appHandler = function(appHandle) {
     return function(event, context) {
+        var app;
         // if we were passed a function, call it to get the app
-        if(Object.prototype.toString.call(app) == '[object Function]') {
-            app = app(event,context);
+        if(Object.prototype.toString.call(appHandle) == '[object Function]') {
+            console.log("got function for appHandle");
+            app = appHandle(event,context);
+        } else {
+            console.log("got app for appHandle");
+            app = appHandle;
         }
 
         var req = mapEvent(event);
