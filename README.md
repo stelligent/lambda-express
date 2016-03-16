@@ -1,3 +1,4 @@
+![logo](lambda-express.png)
 # Overview
 [![NPM version][npm-version-image]][npm-url]
 
