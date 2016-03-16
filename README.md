@@ -4,6 +4,8 @@
 
 [AWS Lambda](https://aws.amazon.com/lambda/) function to integrate with [Express](http://expressjs.com/) from [AWS API Gateway](https://aws.amazon.com/api-gateway/)
 
+Install with `npm install --save lambda-express`
+
 # Express Integration
 ```
 var lambdaExpress = require('lambda-express');
