@@ -1,8 +1,10 @@
-![logo](lambda-express.png)
+![logo](docs/logo.png)
 # Lambda Express
 [![NPM version][npm-version-image]][npm-url]
 
 [AWS Lambda](https://aws.amazon.com/lambda/) function to integrate with [Express](http://expressjs.com/) from [AWS API Gateway](https://aws.amazon.com/api-gateway/)
+
+![overview](docs/overview.png)
 
 Install with `npm install --save lambda-express`
 
